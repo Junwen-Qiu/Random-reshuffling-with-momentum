@@ -1,4 +1,3 @@
-% AT is A transpose
 function [x,out] = StoAlg(f,AT,b,x0,opt,alg)
     x            = x0;
     [n,m]        = size(AT);
