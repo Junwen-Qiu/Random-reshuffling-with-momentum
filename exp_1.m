@@ -24,7 +24,6 @@ opt6.beta    = 0.9;
 objf         = f_loss(L,N);
 
 arrayfun(@(x)assignin('base',join(['rrm',num2str(x),'_fval_hist']), zeros(opt1.maxit,trial)), 1:num_alg);
-arrayfun(@(x)assignin('base',join(['rrm',num2str(x),'_fnat_hist']), zeros(opt1.maxit,trial)), 1:num_alg);
 arrayfun(@(x)assignin('base',join(['rrm',num2str(x),'x_hist']), zeros(n,trial)), 1:num_alg);
 
 parfor k = 1:trial
